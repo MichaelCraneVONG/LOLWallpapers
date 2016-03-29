@@ -15,6 +15,7 @@
 		6FB1B7B01CAAAA510027D16C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB1B7AE1CAAAA510027D16C /* LaunchScreen.storyboard */; };
 		6FB1B7BB1CAAAA510027D16C /* LOLWallpapersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB1B7BA1CAAAA510027D16C /* LOLWallpapersTests.m */; };
 		6FB1B7C61CAAAA510027D16C /* LOLWallpapersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB1B7C51CAAAA510027D16C /* LOLWallpapersUITests.m */; };
+		AC0A30C93D2F670828BA81E7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3718831AE8546AE193000B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20294FA4873A93842E45073A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6FB1B79D1CAAAA510027D16C /* LOLWallpapers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOLWallpapers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB1B7A11CAAAA510027D16C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FB1B7A31CAAAA510027D16C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		6FB1B7C11CAAAA510027D16C /* LOLWallpapersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOLWallpapersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB1B7C51CAAAA510027D16C /* LOLWallpapersUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOLWallpapersUITests.m; sourceTree = "<group>"; };
 		6FB1B7C71CAAAA510027D16C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FB1B7DC1CAAAF660027D16C /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		6FB1B7DD1CAAAF960027D16C /* VendorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VendorMacro.h; sourceTree = "<group>"; };
+		8848600DA2095FC71A3FF48B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DF3718831AE8546AE193000B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0A30C93D2F670828BA81E7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		505D1A03430B86F7197CA3E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF3718831AE8546AE193000B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5161CCC7F5FC8C8F16D486CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20294FA4873A93842E45073A /* Pods.debug.xcconfig */,
+				8848600DA2095FC71A3FF48B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6FB1B7941CAAAA510027D16C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +109,8 @@
 				6FB1B7B91CAAAA510027D16C /* LOLWallpapersTests */,
 				6FB1B7C41CAAAA510027D16C /* LOLWallpapersUITests */,
 				6FB1B79E1CAAAA510027D16C /* Products */,
+				5161CCC7F5FC8C8F16D486CB /* Pods */,
+				505D1A03430B86F7197CA3E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +127,17 @@
 		6FB1B79F1CAAAA510027D16C /* LOLWallpapers */ = {
 			isa = PBXGroup;
 			children = (
-				6FB1B7A31CAAAA510027D16C /* AppDelegate.h */,
-				6FB1B7A41CAAAA510027D16C /* AppDelegate.m */,
+				6FB1B7D41CAAAE780027D16C /* AppDelegate */,
+				6FB1B7D31CAAAE6A0027D16C /* Models */,
+				6FB1B7D91CAAAEC10027D16C /* Macro */,
+				6FB1B7DB1CAAAF120027D16C /* General */,
+				6FB1B7D61CAAAE9F0027D16C /* Vendors */,
+				6FB1B7D81CAAAEB50027D16C /* Resources */,
+				6FB1B7D71CAAAEAD0027D16C /* Sections */,
+				6FB1B7D51CAAAE8F0027D16C /* Helpers */,
+				6FB1B7A91CAAAA510027D16C /* Main.storyboard */,
 				6FB1B7A61CAAAA510027D16C /* ViewController.h */,
 				6FB1B7A71CAAAA510027D16C /* ViewController.m */,
-				6FB1B7A91CAAAA510027D16C /* Main.storyboard */,
 				6FB1B7AC1CAAAA510027D16C /* Assets.xcassets */,
 				6FB1B7AE1CAAAA510027D16C /* LaunchScreen.storyboard */,
 				6FB1B7B11CAAAA510027D16C /* Info.plist */,
@@ -140,6 +172,90 @@
 			path = LOLWallpapersUITests;
 			sourceTree = "<group>";
 		};
+		6FB1B7D31CAAAE6A0027D16C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6FB1B7D41CAAAE780027D16C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6FB1B7A31CAAAA510027D16C /* AppDelegate.h */,
+				6FB1B7A41CAAAA510027D16C /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6FB1B7D51CAAAE8F0027D16C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		6FB1B7D61CAAAE9F0027D16C /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		6FB1B7D71CAAAEAD0027D16C /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sections;
+			sourceTree = "<group>";
+		};
+		6FB1B7D81CAAAEB50027D16C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6FB1B7D91CAAAEC10027D16C /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				6FB1B7DC1CAAAF660027D16C /* UtilsMacro.h */,
+				6FB1B7DD1CAAAF960027D16C /* VendorMacro.h */,
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		6FB1B7DB1CAAAF120027D16C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				6FB1B7DE1CAAAFAF0027D16C /* Views */,
+				6FB1B7DF1CAAAFC30027D16C /* Classes */,
+				6FB1B7E01CAAAFE10027D16C /* Categories */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		6FB1B7DE1CAAAFAF0027D16C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6FB1B7DF1CAAAFC30027D16C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6FB1B7E01CAAAFE10027D16C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FB1B7CA1CAAAA510027D16C /* Build configuration list for PBXNativeTarget "LOLWallpapers" */;
 			buildPhases = (
+				8DB04714F7E79B7513BE5F77 /* Check Pods Manifest.lock */,
 				6FB1B7991CAAAA510027D16C /* Sources */,
 				6FB1B79A1CAAAA510027D16C /* Frameworks */,
 				6FB1B79B1CAAAA510027D16C /* Resources */,
+				88EB0FA424EBF9E784A592C3 /* Embed Pods Frameworks */,
+				790B154CE26C99482C36E6E3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +386,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		790B154CE26C99482C36E6E3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88EB0FA424EBF9E784A592C3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB04714F7E79B7513BE5F77 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FB1B7991CAAAA510027D16C /* Sources */ = {
@@ -412,6 +579,7 @@
 		};
 		6FB1B7CB1CAAAA510027D16C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20294FA4873A93842E45073A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LOLWallpapers/Info.plist;
@@ -423,6 +591,7 @@
 		};
 		6FB1B7CC1CAAAA510027D16C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8848600DA2095FC71A3FF48B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LOLWallpapers/Info.plist;
@@ -499,6 +668,7 @@
 				6FB1B7CC1CAAAA510027D16C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FB1B7CD1CAAAA510027D16C /* Build configuration list for PBXNativeTarget "LOLWallpapersTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +677,7 @@
 				6FB1B7CF1CAAAA510027D16C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FB1B7D01CAAAA510027D16C /* Build configuration list for PBXNativeTarget "LOLWallpapersUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +686,7 @@
 				6FB1B7D21CAAAA510027D16C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

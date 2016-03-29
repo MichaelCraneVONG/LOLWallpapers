@@ -1,0 +1,74 @@
+#标题
+GET http://qt.qq.com/static/pages/news/phone/index.js
+##发现
+banner
+GET http://qt.qq.com/php_cgi/lol_mobile/club/varcache_team_entrancev2.php?plat=android&version=9692
+
+list
+GET http://qt.qq.com/static/pages/news/discovery/c21_index.js
+#最新
+banner
+GET http://qt.qq.com/static/pages/news/phone/c13_list_1.shtml
+
+列表
+GET http://qt.qq.com/static/pages/news/phone/c12_list_1.shtml
+
+
+#赛事
+banner
+GET http://qt.qq.com/php_cgi/lol_mobile/gamecenter/varcache_gamecenterindex.php?plat=android&version=9692
+
+list
+GET http://qt.qq.com/static/pages/news/phone/c73_list_1.shtml 
+
+
+#娱乐 
+list
+GET http://qt.qq.com/static/pages/news/phone/c18_list_1.shtml
+
+#官方
+GET http://qt.qq.com/static/pages/news/phone/c3_list_1.shtml 
+
+#活动
+GET http://qt.qq.com/static/pages/news/phone/c23_list_1.shtml 
+
+#攻略
+GET http://qt.qq.com/static/pages/news/phone/c10_list_1.shtml
+
+#美女
+GET http://qt.qq.com/static/pages/news/phone/c17_list_1.shtml
+
+#推荐
+GET http://qt.qq.com/static/pages/news/phone/c13_list_1.shtml
+
+#最新
+GET http://qt.qq.com/static/pages/news/phone/c12_list_1.shtml
+
+#赛事
+GET http://qt.qq.com/static/pages/news/phone/c73_list_1.shtml
+
+#全部英雄
+http://ossweb-img.qq.com/upload/qqtalk/lol_hero/hero_list.js
+
+
+
+
+GET http://ossweb-img.qq.com/upload/qqtalk/lol_hero/goods_list.js
+
+
+##壁纸
+GET http://qt.qq.com/php_cgi/lol_goods/varcache_wallpaper_list.php?type=new&page=0&num=20&plat=android&version=9692
+
+最热
+http://qt.qq.com/php_cgi/lol_goods/varcache_wallpaper_list.php?type=hot&page=0&num=20&plat=android&version=9692
+分类
+GET http://qt.qq.com/php_cgi/lol_goods/varcache_kind_index.php?page=0&num=20&plat=android&version=9692
+分类详细
+GET http://qt.qq.com/php_cgi/lol_goods/varcache_wallpaper_kind.php?kind=22&page=0&num=20&plat=android&version=9692
+
+
+###收藏
+GET http://qt.qq.com/php_cgi/lol_goods/getsavewallpapers.php?page=0&num=20&hasnext=0&plat=android&version=9692user=-1878119540 HTTP/1.1
+Cookie: p_uin=o1399493536;
+p_skey=xEl5szivedZqsIQFJCw314cLpxSQV2ecT0YGRQPBWuw_;
+
