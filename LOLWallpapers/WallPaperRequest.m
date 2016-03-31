@@ -26,27 +26,6 @@
     return self;
 }
 
-//+ (WallPaperRequest *)requestWithPage:(NSInteger)page
-//                            meiziType:(WallPaperType)type
-//                              success:(void (^)(NSArray<WallPaper *> *))success
-//                              failure:(void (^)(NSString *message))failure
-//{
-//    WallPaperRequest *request=[[WallPaperRequest alloc]initWithPage:page wallPaperType:type];
-//    
-//    [request startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest *request) {
-//        
-//        WallPaperRequest *wallPaperRequest=(WallPaperRequest*)request;
-//        success?success([wallPaperRequest wallPaperArray]):nil;
-//        
-//    } failure:^(__kindof YTKBaseRequest *request) {
-//       
-//        WallPaperRequest *wallPaperRequest=(WallPaperRequest *)request;
-//        failure?failure(@(wallPaperRequest.responseStatusCode).stringValue):nil;
-//        
-//    }];
-//    return request;
-//}
-
 + (WallPaperRequest *)requestWithPage:(NSInteger)page wallPaperType:(WallPaperType)type success:(void (^)(NSArray<WallPaper *> *))success failure:(void (^)(NSString *))failure {
     WallPaperRequest *request = [[WallPaperRequest alloc] initWithPage:page wallPaperType:type];
     [request startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest *request) {
