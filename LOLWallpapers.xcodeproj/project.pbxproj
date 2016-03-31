@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F75CD4C1CAACF1B0084F0D2 /* WallPapersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F75CD4B1CAACF1B0084F0D2 /* WallPapersViewController.m */; };
+		6F75CD4F1CAAE17A0084F0D2 /* WallPaperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F75CD4E1CAAE17A0084F0D2 /* WallPaperCell.m */; };
+		6F75CD521CAAE26E0084F0D2 /* WallPaper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F75CD511CAAE26E0084F0D2 /* WallPaper.m */; };
+		6F75CD551CAAF3360084F0D2 /* WallPaperRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F75CD541CAAF3360084F0D2 /* WallPaperRequest.m */; };
 		6FB1B7A21CAAAA510027D16C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB1B7A11CAAAA510027D16C /* main.m */; };
 		6FB1B7A51CAAAA510027D16C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB1B7A41CAAAA510027D16C /* AppDelegate.m */; };
-		6FB1B7A81CAAAA510027D16C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB1B7A71CAAAA510027D16C /* ViewController.m */; };
 		6FB1B7AB1CAAAA510027D16C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB1B7A91CAAAA510027D16C /* Main.storyboard */; };
 		6FB1B7AD1CAAAA510027D16C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB1B7AC1CAAAA510027D16C /* Assets.xcassets */; };
 		6FB1B7B01CAAAA510027D16C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB1B7AE1CAAAA510027D16C /* LaunchScreen.storyboard */; };
@@ -37,12 +40,20 @@
 
 /* Begin PBXFileReference section */
 		20294FA4873A93842E45073A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6F75CD491CAACA790084F0D2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6F75CD4A1CAACF1B0084F0D2 /* WallPapersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPapersViewController.h; sourceTree = "<group>"; };
+		6F75CD4B1CAACF1B0084F0D2 /* WallPapersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPapersViewController.m; sourceTree = "<group>"; };
+		6F75CD4D1CAAE17A0084F0D2 /* WallPaperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPaperCell.h; sourceTree = "<group>"; };
+		6F75CD4E1CAAE17A0084F0D2 /* WallPaperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPaperCell.m; sourceTree = "<group>"; };
+		6F75CD501CAAE26E0084F0D2 /* WallPaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPaper.h; sourceTree = "<group>"; };
+		6F75CD511CAAE26E0084F0D2 /* WallPaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPaper.m; sourceTree = "<group>"; };
+		6F75CD531CAAF3360084F0D2 /* WallPaperRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPaperRequest.h; sourceTree = "<group>"; };
+		6F75CD541CAAF3360084F0D2 /* WallPaperRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPaperRequest.m; sourceTree = "<group>"; };
+		6F75CD561CAB05FC0084F0D2 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		6FB1B79D1CAAAA510027D16C /* LOLWallpapers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOLWallpapers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB1B7A11CAAAA510027D16C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FB1B7A31CAAAA510027D16C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FB1B7A41CAAAA510027D16C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6FB1B7A61CAAAA510027D16C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6FB1B7A71CAAAA510027D16C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6FB1B7AA1CAAAA510027D16C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FB1B7AC1CAAAA510027D16C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FB1B7AF1CAAAA510027D16C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,8 +147,6 @@
 				6FB1B7D71CAAAEAD0027D16C /* Sections */,
 				6FB1B7D51CAAAE8F0027D16C /* Helpers */,
 				6FB1B7A91CAAAA510027D16C /* Main.storyboard */,
-				6FB1B7A61CAAAA510027D16C /* ViewController.h */,
-				6FB1B7A71CAAAA510027D16C /* ViewController.m */,
 				6FB1B7AC1CAAAA510027D16C /* Assets.xcassets */,
 				6FB1B7AE1CAAAA510027D16C /* LaunchScreen.storyboard */,
 				6FB1B7B11CAAAA510027D16C /* Info.plist */,
@@ -150,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				6FB1B7A11CAAAA510027D16C /* main.m */,
+				6F75CD491CAACA790084F0D2 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,6 +185,10 @@
 		6FB1B7D31CAAAE6A0027D16C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6F75CD501CAAE26E0084F0D2 /* WallPaper.h */,
+				6F75CD511CAAE26E0084F0D2 /* WallPaper.m */,
+				6F75CD531CAAF3360084F0D2 /* WallPaperRequest.h */,
+				6F75CD541CAAF3360084F0D2 /* WallPaperRequest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -221,6 +235,7 @@
 			children = (
 				6FB1B7DC1CAAAF660027D16C /* UtilsMacro.h */,
 				6FB1B7DD1CAAAF960027D16C /* VendorMacro.h */,
+				6F75CD561CAB05FC0084F0D2 /* Constant.h */,
 			);
 			name = Macro;
 			sourceTree = "<group>";
@@ -238,6 +253,8 @@
 		6FB1B7DE1CAAAFAF0027D16C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6F75CD4D1CAAE17A0084F0D2 /* WallPaperCell.h */,
+				6F75CD4E1CAAE17A0084F0D2 /* WallPaperCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -245,6 +262,8 @@
 		6FB1B7DF1CAAAFC30027D16C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6F75CD4A1CAACF1B0084F0D2 /* WallPapersViewController.h */,
+				6F75CD4B1CAACF1B0084F0D2 /* WallPapersViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -440,9 +459,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FB1B7A81CAAAA510027D16C /* ViewController.m in Sources */,
+				6F75CD551CAAF3360084F0D2 /* WallPaperRequest.m in Sources */,
 				6FB1B7A51CAAAA510027D16C /* AppDelegate.m in Sources */,
 				6FB1B7A21CAAAA510027D16C /* main.m in Sources */,
+				6F75CD4F1CAAE17A0084F0D2 /* WallPaperCell.m in Sources */,
+				6F75CD4C1CAACF1B0084F0D2 /* WallPapersViewController.m in Sources */,
+				6F75CD521CAAE26E0084F0D2 /* WallPaper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +604,8 @@
 			baseConfigurationReference = 20294FA4873A93842E45073A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/myapple/Desktop/LOLWallpapers/LOLWallpapers/LOLWallpapers/PrefixHeader.pch;
 				INFOPLIST_FILE = LOLWallpapers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crame.LOLWallpapers;
@@ -594,6 +618,8 @@
 			baseConfigurationReference = 8848600DA2095FC71A3FF48B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/myapple/Desktop/LOLWallpapers/LOLWallpapers/LOLWallpapers/PrefixHeader.pch;
 				INFOPLIST_FILE = LOLWallpapers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crame.LOLWallpapers;

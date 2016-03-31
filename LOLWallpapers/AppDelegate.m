@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import <YTKNetwork/YTKNetworkConfig.h>
+#import <YTKNetwork/YTKNetworkAgent.h>
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    [YTKNetworkConfig sharedInstance].baseUrl = BaseURL;
+    [[YTKNetworkAgent sharedInstance] setValue:[NSSet setWithObjects:@"application/json", @"text/plain", @"text/javascript", @"text/json", @"text/html", @"text/css", nil] forKeyPath :@"_manager.responseSerializer.acceptableContentTypes"];
+    
+    //Set SVProgressHUD
+    [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.0 alpha:0.9]];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     return YES;
 }
 
