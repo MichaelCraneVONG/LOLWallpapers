@@ -31,7 +31,7 @@
 {
     self=[super initWithCoder:aDecoder];
     if (self) {
-        _WallPaperpage=1;
+        _WallPaperpage=0;
         _type=WallPaperTypeNEW;
         _WallPagerArray=[[NSMutableArray alloc]init];
     }
@@ -93,7 +93,7 @@
 }
 
 -(void)refreshWallPaper{
-    self.WallPaperpage=1;
+    self.WallPaperpage=0;
         [WallPaperRequest requestWithPage:self.WallPaperpage wallPaperType:self.type success:^(NSArray<WallPaper *> *wallPaperArray) {
             [self.collectionView.mj_header endRefreshing];
             [self reloadDataWithWallPaperArray:wallPaperArray emptyBeforeReLoad:YES];
@@ -117,7 +117,7 @@
 -(void)reloadDataWithWallPaperArray:(NSArray<WallPaper*>*)wallPaperArray emptyBeforeReLoad:(BOOL) emptyBeforeReload
 {
     if (emptyBeforeReload) {
-        self.WallPaperpage=1;
+        self.WallPaperpage=0;
         [self.WallPagerArray removeAllObjects];
         [self.WallPagerArray addObjectsFromArray:wallPaperArray];
         [self.collectionView.mj_footer resetNoMoreData];
